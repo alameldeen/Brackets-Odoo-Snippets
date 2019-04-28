@@ -1,0 +1,3 @@
+def unlink(self):
+    res = super({{$1:Class}}, self).unlink()
+    return res

@@ -1,0 +1,1 @@
+compute="_compute_{{$1:MethodName}}", inverse="_inverse_{{$1:MethodName}}", search="_search_{{$1:MethodName}}", 

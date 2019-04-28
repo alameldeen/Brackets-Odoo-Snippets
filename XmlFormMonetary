@@ -1,0 +1,1 @@
+widget="monetary" options="{'currency_field': {{$1:currency_id}}}}" 

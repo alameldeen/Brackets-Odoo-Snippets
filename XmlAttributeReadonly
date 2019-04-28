@@ -1,0 +1,1 @@
+attrs="{'readonly':[({{$1:field}},'=', {{$2:condition}})]}" 

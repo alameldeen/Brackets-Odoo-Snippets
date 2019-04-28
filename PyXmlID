@@ -1,0 +1,1 @@
+{{$1:example}}_id = self.env.ref("{{$2:module.object_id}}").id

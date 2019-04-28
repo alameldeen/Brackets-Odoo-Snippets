@@ -1,0 +1,1 @@
+access_{{$1:model}}_{{$2:role}},{{$1:model}} {{$2:role}},model_{{$1:model}},{{$3:group}},{{$4:read}},{{$5:update}},{{$6:create}},{{$7:delete}}

@@ -1,0 +1,1 @@
+assertRegexpMatches({{$1:text}}, {{$2:regexp}}, msg={{$3:None}})

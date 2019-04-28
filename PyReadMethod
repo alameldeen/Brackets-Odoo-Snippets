@@ -1,0 +1,4 @@
+@api.multi
+def read(self, fields=None, load='_classic_read'):
+    res = super({{$1:Class}}, self).read(fields)
+    return res

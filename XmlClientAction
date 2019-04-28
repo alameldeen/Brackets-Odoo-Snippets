@@ -1,0 +1,6 @@
+<record id="action{{$1:model}}_{{$2:detail}}" model="ir.actions.client">
+    <field name="name">{{$3:Title}}</field>
+    <field name="res_model">{{$4:module}}{{$5:model}}</field>
+    <field name="tag">{{$6:model}}_view{{$7:details}}</field>
+    <field name="context">{8:context}}</field>
+</record>

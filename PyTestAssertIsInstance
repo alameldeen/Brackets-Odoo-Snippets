@@ -1,0 +1,1 @@
+assertIsInstance({{$1:obj}}, {{$2:cls}}, msg={{$3:None}})

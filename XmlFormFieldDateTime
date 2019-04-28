@@ -1,0 +1,1 @@
+<field name="{{$1:name}}" eval="time.strftime('%Y-%m-%d %H:%M:%S')" />

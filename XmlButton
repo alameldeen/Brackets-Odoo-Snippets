@@ -1,0 +1,3 @@
+<button class="oe_stat_button" type="object" name="{{$1:xml_id}}" icon="fa-check">
+    <div>{{$2:Label}}</div>
+</button>

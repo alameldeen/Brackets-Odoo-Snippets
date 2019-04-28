@@ -1,0 +1,1 @@
+{{$1:new_field}} = fields.Float(string="{{$2:String}}", digits=(16,2))

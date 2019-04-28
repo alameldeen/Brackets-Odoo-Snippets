@@ -1,0 +1,1 @@
+{{$1:new_field}} = fields.Selection("{{$2:Selection}}", string="{{$3:String}}")

@@ -1,0 +1,1 @@
+attrs="{'invisible':[({{$1:field}},'=', {{$2:condition}})]}" 

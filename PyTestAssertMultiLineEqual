@@ -1,0 +1,1 @@
+assertMultiLineEqual({{$1:first}}, {{$2:second}}, msg={{$3:None}})

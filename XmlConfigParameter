@@ -1,0 +1,5 @@
+<record id="{{$1:model}}" model="ir.config_parameter">
+    <field name="key">{{$2:char}}</field>
+    <field name="value">{{$3:text}}</field>
+    <field name="group_ids" eval="[(4, ref('{{$4:res.groups}}'))]" />
+</record>

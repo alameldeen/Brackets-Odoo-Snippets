@@ -1,0 +1,1 @@
+assertRaisesRegexp({{$1:exception}}, {{$2:regexp}}, {{$3:callable}}, {{$4:*args}}, {{$5:**kwds}})

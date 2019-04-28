@@ -1,0 +1,1 @@
+<field name="{{$1:name}}" ref="{{$2:ir.model}}" />

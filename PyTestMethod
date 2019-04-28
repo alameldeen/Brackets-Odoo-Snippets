@@ -1,0 +1,4 @@
+def test_{{$1:item}}(self):
+    """ Checks if the {{$2}} works properly
+    """
+    pass

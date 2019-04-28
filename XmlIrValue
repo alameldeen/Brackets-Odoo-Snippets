@@ -1,0 +1,12 @@
+<record id="{{$1:id}}_values" model="ir.values">
+    <field name="name">{{$2:Name}}</field>
+    <field name="model_id" ref="{{$3:module.model_external_id}}" />
+    <field name="model">{{$4:model}}</field>
+    <field name="value" eval="'{{5:$act_window}},' + str(ref('{{$6:action_external_id}}'))" />
+    <field name="key">{{$7:action}}</field>
+    <field name="key2">{{$8:tree_but_open}}</field>
+    <field name="action_id" ref="{{$9:ir.actions.actions}}" />
+    <field name="res_id" eval="{{$10:1}}" />
+    <field name="company_id" ref="{{$11:res.company}}" />
+    <field name="user_id" ref="{{$12:res.users}}" />
+</record>

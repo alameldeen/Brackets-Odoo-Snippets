@@ -1,0 +1,6 @@
+@api.multi
+@api.constrains("{{$1:Field}}")
+def _check_{{$1:Field}}(self):
+    for rec in self:
+        if rec.{{$1:Field}}:
+            raise UserError(_("{{$4:Message"}}))

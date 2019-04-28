@@ -1,0 +1,14 @@
+<record id="menu_{{$1:id}}" model="ir.ui.menu" >
+    <field name="name">{{$2:Name}}</field>
+    <field name="sequence" eval="{{$3:50}}" />
+    <field name="action" ref="action_{{$4:act_window}}_window" />
+    <field name="parent_id" ref="{{$5}}" />
+    <field name="parent_left"></field>
+    <field name="parent_right"></field>
+    <field name="web_icon_data"></field>
+    <field name="web_icon_hover"></field>
+    <field name="web_icon_hover_data"></field>
+    <field name="icon"></field>
+    <field name="needaction_enabled"></field>
+    <field name="web_icon"></field>
+</record>

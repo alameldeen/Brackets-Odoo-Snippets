@@ -1,0 +1,6 @@
+<record id="{{$1:id}}" model="ir.model">
+    <field name="model">{{$1:model_name}}</field>
+    <field name="name">{{$2:Name}}</field>
+    <field name="state">{{$3:Base | Manual}}</field>
+    <field name="info">{{$4:Description}}</field>
+</record>

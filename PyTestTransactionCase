@@ -1,0 +1,16 @@
+from odoo.tests.common import TransactionCase
+
+
+class {{$1:Model}}(TransactionCase):
+    """ {{$2:Class}}'.
+
+        Tests:
+          - {{$3:item_name}}: Checks if the {{$3:item_name}} works properly
+    """
+
+    def setUp(self):
+        super({{$1:Model}}, self).setUp()
+
+    def test_{{$3:item_name}}(self):
+        """ Checks if the {{$3}} works properly """
+        pass

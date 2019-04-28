@@ -1,0 +1,7 @@
+@api.multi
+@api.depends("{{$1:Fields}}")
+@api.onchange("{{$1:Fields}}")
+def _compute_{{$1:Fields}}(self):
+    for rec in self:
+        if rec.{{$1:Fields}}:
+            pass

@@ -1,0 +1,1 @@
+assertRaises({{$1:exception}})

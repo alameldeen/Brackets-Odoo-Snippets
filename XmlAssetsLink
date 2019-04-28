@@ -1,0 +1,1 @@
+<link rel="stylesheet" href="/{{$1:module}}/static/src/css/{{$2:styles}}.css" />

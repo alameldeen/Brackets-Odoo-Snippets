@@ -1,0 +1,5 @@
+<template id="{{$1}}" inherit_id="website.snippets" name="{{$2}}">
+    <xpath expr="{{$3://div[@class='o_panel_body']}}" position="{{$4:inside}}">
+        <t t-snippet="theme_tutorial.snippet_testimonial" t-thumbnail="/theme_tutorial/static/src/img/ui/snippet_thumb.jpg"/>
+    </xpath>
+</template>

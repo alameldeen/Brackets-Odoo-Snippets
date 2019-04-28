@@ -1,0 +1,4 @@
+${1:fields.Date}.context_today($2)
+${1:fields.Date}.from_string($3)
+${1:fields.Date}.to_string($3)
+${1:fields.Date}.today($2)

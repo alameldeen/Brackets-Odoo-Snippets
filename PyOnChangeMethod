@@ -1,0 +1,5 @@
+@api.multi
+@api.onchange("{{$1:Fields}}")
+def _onchange_{{$2:Field}}(self):
+    for rec in self:
+        rec.{{$2:Field}} = {{$4:Value}}

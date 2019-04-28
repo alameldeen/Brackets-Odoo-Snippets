@@ -1,0 +1,6 @@
+<template id="assets_frontend" name="{{$1:model}} frontend assets" inherit_id="website.assets_frontend">
+    <xpath expr="." position="inside">
+        <link rel="stylesheet" href="/{{$2:module}}/static/src/css/{{$3:style}}.css"/>
+        <script type="text/javascript" src="/{{$2:module}}/static/src/js/{{$4:script}}.js"></script>
+    </xpath>
+</template>

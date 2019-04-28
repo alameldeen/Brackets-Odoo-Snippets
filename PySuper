@@ -1,0 +1,1 @@
+super({{$1:Class}}, self).{{$2:Method}}()

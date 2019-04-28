@@ -1,0 +1,18 @@
+<record id="email_template_{{$1:id}}" model="email.template">
+    <field name="name">{{$2:name}}</field>
+    <field name="subject">{{$3:Subject}}</field>
+    <field name="email_from">object.company_id.name <(object.company_id.email or user.email)|safe></field>
+    <field name="email_to">object.name|safe <object.email|safe></field>
+    <field name="email_cc">{{$4}}</field>
+    <field name="reply_to">{{$5}}</field>
+    <field name="user_signature" eval="{{$6:False}}" />
+    <field name="lang">object.lang</field>
+    <field name="auto_delete" eval="{{$7:True}}" />
+    <field name="model_id" ref="{{$8:ir.model}}" />
+    <field name="attachment_ids" eval="[(4, ref('{{$9:ir.attachment}}'))]" />
+    <field name="body_html">
+        <![CDATA[
+        <p>To whom it may concern:</p>
+        ]]>
+    </field>
+</record>

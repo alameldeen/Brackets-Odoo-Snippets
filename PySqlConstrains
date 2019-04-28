@@ -1,0 +1,3 @@
+_sql_constraints = [
+    ("{{$1:code}}", "{{$2:SqlMethod}}", "{{$3:Message}}"),
+]

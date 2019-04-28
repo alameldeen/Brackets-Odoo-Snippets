@@ -1,0 +1,52 @@
+# -*- coding: utf-8 -*-
+##############################################################################
+#
+#    Odoo, Open Source Management Solution
+#    Copyright (c) 2019 Waell Ahmed (http://www.genericdev.com) info <waell.alameldeen@gmail.com>
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU Affero General Public License as
+#    published by the Free Software Foundation, either version 3 of the
+#    License, or (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU Affero General Public License for more details.
+#
+#    You should have received a copy of the GNU Affero General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+##############################################################################
+
+from odoo import api, fields, models, _
+from odoo import tools
+
+
+########## ########## ########## ########## ##########
+# Description
+########## ########## ########## ########## ##########
+class {{$1:Class}}(models.Model):
+    _name = "{{$2:Object}}"
+    _auto = False
+    _description = "{{$3:Description}}"
+    _rec_name = ""
+    _order = ""
+    _table = ""
+
+    name = fields.Char(string="{{$4:String}}")
+    {{$5:field}} = fields.Char(string='{{$6:String}}', readonly=True)
+    {{$7:Many2OneField}}_id = fields.Many2one('{{$8:Class}}', string='{{$9:String}}', readonly=True)
+
+    def init(self, cr):
+        tools.drop_view_if_exists(cr, "{{$10:ViewName}}")
+        cr.execute("""
+            CREATE OR REPLACE VIEW {{$11:ViewName}} AS (
+            SELECT 
+                row_number() over(order by name) AS id,
+                name,
+             {{$12:field}},
+             {{$13:m2ofield}}
+            FROM 
+            WHERE 
+        )""")

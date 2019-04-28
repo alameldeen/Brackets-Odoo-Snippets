@@ -1,0 +1,1 @@
+<button type="action" name="%({{$1:xml_id}})d" string="{{$2:Button label}}" />

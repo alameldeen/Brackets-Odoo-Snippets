@@ -1,0 +1,1 @@
+assertRaises({{$1:exception}}, {{$2:callable}}, {{$3:*args}}, {{$4:**kwds}})

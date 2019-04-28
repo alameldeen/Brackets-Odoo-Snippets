@@ -1,0 +1,8 @@
+@api.onchange('{{$1:field}}')
+def _onchange_{{$1:field}}(self):
+    return {
+        'warning': {
+            'title': '{{$2:Text of the title}}',
+            'message': '{{$3:Text of the message}}'
+        }
+    }

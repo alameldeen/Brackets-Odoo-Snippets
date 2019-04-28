@@ -1,0 +1,1 @@
+assertSequenceEqual({{$1:seq1}}, {{$2:seq2}}, msg={{$3:None}}, seq_type={{$5:None}})

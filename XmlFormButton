@@ -1,0 +1,12 @@
+<button name="{{$1:function_name}}" string="{{$2:string}}" {{$4:type="{{$3:object}}"}} {{$5:special="cancel"}} />
+
+<button 
+    name="{{$1:function_name}}"
+    string="{{$2:string}}"
+    type="{{$3:object}}"
+    special="cancel"
+    default_focus="{{$6:0}}"
+    icon="{{$8:gtk-apply}}"
+    confirm="{{$10:message}}"
+    help="{{$12:message}}"
+/>

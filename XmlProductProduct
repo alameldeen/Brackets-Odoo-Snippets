@@ -1,0 +1,16 @@
+<record id="{{$0:}}_product" model="product.{{$1:product|template}]">
+    <field name="name">{{$2:Name}}</field>
+    <field name="description">{{$3:Description}}</field>
+    <field name="description_purchase">{{$4:PurchaseDescription}}</field>
+    <field name="description_sale">{{$5:SaleDescription}}</field>
+    <field name="categ_id" ref="{{$6:productCategory}}"/>
+    <field name="standard_price">{{$7:0.0}}</field>
+    <field name="list_price">{{$8:0.0}}</field>
+    <field name="type">{{$9:consu|service}}</field>
+    <field name="uom_id" ref="{{$10:uom}}"/>
+    <field name="uom_po_id" ref="{{$11:uom_po}}"/>
+    <field name="taxes_id" eval="[(12, ref('{{$12:account.tax}}'))]" />
+    <field name="image" type="base64" file="module_name/static/img/file_name.png"/>
+    <field name="default_code">{{$13:Code}}</field>
+    <field name="ean13">{{$14:0000000000000}}</field>
+</record>

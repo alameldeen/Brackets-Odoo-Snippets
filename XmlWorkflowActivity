@@ -1,0 +1,8 @@
+<record id="{{$1:Class}}_activity" model="workflow.activity">
+    <field name="wkf_id" ref="{{$2:WorkflowName}}_workflow"/>
+    <field name="name">{{$3:String}}</field>
+    <field name="flow_start">True</field>
+    <field name="flow_stop">True</field>
+    <field name="kind">{{$4:dummy/function/stopall/subflow}}</field>
+    <field name="action">{{$5}}</field>
+</record>

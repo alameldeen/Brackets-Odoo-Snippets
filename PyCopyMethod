@@ -1,0 +1,16 @@
+@api.multi
+def copy(self, default=None):
+    """
+        Create a new record in {{$1:Model}} model from existing one
+        @param default: dict which contains the values to be override during
+        copy of object
+
+        @return: returns a id of newly created record
+    """
+    for rec in self:
+        default = dict(default or {})
+        default.update(
+           {{$2:name}} = _('%s (copy)') % (self.{{$2:name}} or ''),
+           {{$3:code}} = _('%s (copy)') % (self.{{$3:code}} or ''),
+        )
+        return super({{$4:Class}}, self).copy(default)

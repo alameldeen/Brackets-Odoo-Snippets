@@ -1,0 +1,1 @@
+<t t-call="report.minimal_layout"></t>

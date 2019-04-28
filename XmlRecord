@@ -1,0 +1,3 @@
+<record id="{{$1:RecordID}}" model="{{$2:Class}}">
+    <field name="{{$3:FieldsName}}">{{$4:Data}}</field>
+</record>

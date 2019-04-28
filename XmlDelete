@@ -1,0 +1,1 @@
+<delete model="{{$1:model}}" search="[('id', '=', ref('{{$2:xml_id}}'))]" />

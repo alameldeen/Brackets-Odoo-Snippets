@@ -1,0 +1,1 @@
+{{$1:Name}}_obj = self.env["{{$2:Object}}"]

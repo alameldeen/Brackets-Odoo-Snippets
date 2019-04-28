@@ -1,0 +1,5 @@
+<page string="{{$1}}" class="{{$2:oe_page}}}}" accesskey="{{$3}}">
+    <group name="{{$2}}" sring="{{$3}}">
+        <field name="{{$4}}"/>
+    </group>
+</page>

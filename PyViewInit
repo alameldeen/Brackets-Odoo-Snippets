@@ -1,0 +1,4 @@
+@api.model
+def view_init(self, fields_list):
+    """ Does specific things when a view on the object is opened """
+    pass

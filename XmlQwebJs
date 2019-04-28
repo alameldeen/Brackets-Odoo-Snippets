@@ -1,0 +1,3 @@
+<t t-js="{{$1:name}}">
+    console.log("Foo is", ctx.foo);
+</t>

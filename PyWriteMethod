@@ -1,0 +1,6 @@
+@api.multi
+def write(self, values):
+    for rec in self:
+        if values.get('{{$1:field}}'):
+            values["{{$2:result}}"] = "{{$3:value}}"
+        return super({{$4:Class}}, self).write(values)

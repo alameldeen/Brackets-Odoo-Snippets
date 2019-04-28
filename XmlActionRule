@@ -1,0 +1,16 @@
+<record id="action_{{$1:Title}}_rule" model="base.action.rule">
+    <field name="name">{{$2:Name}}</field>
+    <field name="active" eval="{{$3:True}}" />
+    <field name="sequence" eval="{{$4:0}}" />
+    <field name="server_action_ids" eval="[(4, ref('{{$5:ir.actions.server}}'))]" />
+    <field name="model_id" ref="model_{{$6:ir.model}}" />
+    <field name="kind">{{$7:on_create_or_write}}</field>
+    <field name="trg_date_id" ref="{{$8:ir.model.fields}}" />
+    <field name="trg_date_range" eval="{{$9:0}}" />
+    <field name="trg_date_range_type">{{$10:day}}</field>{{$11:
+    <field name="trg_date_calendar_id" ref="{{$11:resource.calendar}}" />
+    <field name="filter_id" ref="{{$12:ir.filters}}" />
+    <field name="filter_pre_id" ref="{{$13:ir.filters}}" />
+    <field name="act_user_id" ref="{{$14:base.user_root}}" />
+    <field name="act_followers" eval="[(4, ref('{{$15:res.partner}}'))]" />
+</record>

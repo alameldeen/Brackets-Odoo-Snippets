@@ -1,0 +1,1 @@
+related="{{$1:model}}.{{$2:field}}", related_sudo={{$3:True}} 

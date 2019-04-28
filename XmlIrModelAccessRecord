@@ -1,0 +1,10 @@
+<record id="access_{{$1:id}}" model="ir.model.access">
+    <field name="name">{{$2:Name}}</field>
+    <field name="model_id" ref="{{$3:ir.model}}"/>
+    <field name="group_id" ref="{{$4:res.groups}}"/>
+    <field name="perm_read" eval="{{$5:True}}" />
+    <field name="perm_create" eval="{{$6:True}}" />
+    <field name="perm_write" eval="{{$7:True}}" />
+    <field name="perm_unlink" eval="{{$8:True}}" />
+    <field name="active" eval="{{$9:True}}" />
+</record>
